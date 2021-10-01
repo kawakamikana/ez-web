@@ -19,7 +19,7 @@
 	<script src="https://ajaxzip3.github.io/ajaxzip3.js"></script>
 </head>
 
-<body>
+<body onpageshow="ez_mf_initialize('contact');">
 	<header class="default-header">
 		<nav class="navbar navbar-expand-lg navbar-light">
 			<div class="nav-container">
@@ -69,7 +69,7 @@
 	</section>
 
 
-	<form method="post" action="#" enctype="multipart/form-data">
+	<form method="post" action="contact/postmail" enctype="multipart/form-data">
 		<div class="container">
 			<div class="form-group">
 				<table class="table-style table_form">
@@ -169,14 +169,13 @@
 							data-action="call">TEL：03-5654‐9071</span>】までお問い合わせください。</p>
 				</div>
 				<div class="text-center chkbox mb30">
-					<input name="word11" type="hidden" value="">
-					<input name="word11" type="checkbox" value="個人情報保護の取り扱いに同意する" id="doi">
+					<input name="word13" type="hidden" value="">
+					<input name="word13" type="checkbox" value="個人情報保護の取り扱いに同意する" id="doi">
 					<label for="doi" class="checkbox01">個人情報保護の取り扱いに同意する</label>
 				</div>
 				<div class="mbottom2">
 					<div class="text-center">
 						<button type="submit" class="submit genric-btn primary e-large">内容を確認して送信</button>
-						<button type="submit" class="submit genric-btn primary e-large">戻る</button>
 					</div>
 				</div>
 			</div>
@@ -224,17 +223,6 @@
 	<script src="js/current.js"></script>
 	<script src="js/tel-3.1.js"></script>
 	<script src="js/main.js"></script>
-	<script>
-		$(document).ready(function () {
-			$("form input[type!=image][type!=button][type!=submit][type!=reset],form select").keypress(function (e) {
-				if ((e.which && e.which == 13) || (e.keyCode && e.keyCode == 13)) {
-					return false;
-				} else {
-					return true;
-				}
-			});
-		});
-	</script>
 </body>
 
 </html>
